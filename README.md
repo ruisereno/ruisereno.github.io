@@ -1,5 +1,3 @@
-My personal website.
-
-[ruisereno.com](http://ruisereno.com)
+My personal [website](http://ruisereno.com).
 
 Created using [Start Bootstrap - Freelancer](https://startbootstrap.com/template-overviews/freelancer/).
