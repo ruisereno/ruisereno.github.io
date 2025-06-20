@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Hero from "../components/sections/Hero.astro"
+import Resume from "../components/sections/Resume.astro"
+import { basic } from "../config/config.json"
+---
+
+<Layout title={basic.name} description={basic.summary}>
+  <Hero />
+  <Resume />
+</Layout>

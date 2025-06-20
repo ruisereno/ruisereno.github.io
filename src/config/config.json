@@ -1,0 +1,97 @@
+{
+  "basic": {
+    "name": "Rui Sereno",
+    "job": "Senior Software Engineer",
+    "summary": "Senior software engineer with extensive experience delivering high-quality software solutions across various industries."
+  },
+  "projects": [
+    {
+      "title": "Silent Data",
+      "link": "https://silentdata.com",
+      "details": "While working at Applied Blockchain"
+    },
+    {
+      "title": "SquidWeb",
+      "link": "https://squidweb.biz",
+      "details": "While working at SquidWeb"
+    },
+    {
+      "title": "GoConqr",
+      "link": "https://goconqr.com",
+      "details": "While working at GoConqr"
+    },
+    {
+      "title": "Ekonomista",
+      "link": "https://e-konomista.pt",
+      "details": "While working at Adclick"
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Senior Software Engineer",
+      "subTitle": "Applied Blockchain",
+      "link": "https://appliedblockchain.com",
+      "dates": "May 2022 - Present",
+      "details": "London - United Kingdom, Remote from Porto - Portugal"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "subTitle": "SquidWeb",
+      "link": "https://squidweb.biz",
+      "dates": "October 2018 - April 2022",
+      "details": "Germany, Remote from Porto - Portugal"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "subTitle": "Bodum",
+      "link": "https://bodum.com",
+      "dates": "December 2017 - October 2018",
+      "details": "Porto - Portugal"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "subTitle": "GoConqr",
+      "link": "https://goconqr.com",
+      "dates": "January 2014 - November 2017",
+      "details": "Belfast - United Kingdom"
+    },
+    {
+      "title": "Software Engineer",
+      "subTitle": "Adclick",
+      "link": "https://adclick.pt",
+      "dates": "August 2011 - December 2013",
+      "details": "Porto - Portugal"
+    },
+    {
+      "title": "Junior Software Engineer",
+      "subTitle": "FYI Digital",
+      "link": "https://www.instagram.com/fyi_digital",
+      "dates": "March 2009 - July 2011",
+      "details": "Porto - Portugal"
+    }
+  ],
+  "education": [
+    {
+      "title": "Bachelor's Degree in Software Engineering",
+      "subTitle": "Instituto Superior de Engenharia do Porto",
+      "link": "https://isep.ipp.pt",
+      "details": "Porto - Portugal"
+    }
+  ],
+  "menuItems": [
+    {
+      "name": "About",
+      "link": "/"
+    }
+  ],
+  "socialLinks": [
+    {
+      "iconName": "Linkedin",
+      "link": "https://linkedin.com/in/ruisereno"
+    },
+    {
+      "iconName": "Github",
+      "link": "https://github.com/ruisereno"
+    }
+  ]
+}

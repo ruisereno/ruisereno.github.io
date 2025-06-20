@@ -1,0 +1,23 @@
+---
+import Projects from "./resume/Projects.astro"
+import Experience from "./resume/Experience.astro"
+import Education from "./resume/Education.astro"
+---
+
+<section class="bg-background py-8">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col items-center">
+      <div class="w-full lg:w-3/4">
+        <Projects />
+      </div>
+
+      <div class="w-full lg:w-3/4">
+        <Experience />
+      </div>
+
+      <div class="w-full lg:w-3/4">
+        <Education />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+---
+import Header from "../components/layouts/Header.astro"
+import Footer from "../components/layouts/Footer.astro"
+
+import "../styles/index.css"
+
+interface Props {
+  title: string
+  description: string
+}
+
+const { title, description } = Astro.props
+---
+
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body
+    class="flex h-full flex-col overflow-x-hidden bg-default text-base text-default selection:bg-secondary"
+  >
+    <Header />
+    <section class="flex-grow">
+      <slot />
+    </section>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,55 @@
+---
+import { Icon } from "astro-icon/components"
+import { basic, menuItems } from "../../config/config.json"
+---
+
+<header class="bg-background py-4">
+  <div
+    class="container mx-auto flex max-w-6xl items-center justify-between px-4 md:px-8"
+  >
+    <div class="text-2xl font-bold">
+      <a href="/" class="hover:text-offset">{basic.name}</a>
+    </div>
+
+    <div class="flex gap-5">
+      <nav class="hidden items-center space-x-6 sm:flex">
+        {
+          menuItems.map((item) => (
+            <a href={item.link} class="hover:text-offset">
+              {item.name}
+            </a>
+          ))
+        }
+      </nav>
+
+      <div class="flex sm:hidden">
+        <button
+          id="menu-btn"
+          class="focus:outline-none"
+          aria-label="Mobile open menu"
+        >
+          <Icon name="Menu" class="size-6" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden sm:hidden">
+    {
+      menuItems.map((item) => (
+        <a href={item.link} class="hover:bg-background-offset block px-4 py-2">
+          {item.name}
+        </a>
+      ))
+    }
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn")
+  const mobileMenu = document.getElementById("mobile-menu")
+
+  menuBtn?.addEventListener("click", () => {
+    mobileMenu?.classList.toggle("hidden")
+  })
+</script>
