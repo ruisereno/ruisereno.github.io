@@ -1,7 +1,7 @@
 {
   "name": "ruisereno.github.io",
   "type": "module",
-  "version": "1.0.3",
+  "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
