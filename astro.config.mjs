@@ -7,6 +7,5 @@ import sitemap from "@astrojs/sitemap"
 
 export default defineConfig({
   site: "https://ruisereno.github.io",
-  base: "/",
   integrations: [tailwind(), icon(), mdx(), sitemap()],
 })
