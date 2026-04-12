@@ -9,13 +9,13 @@ const { title, subTitle, link, dates, details } = Astro.props
     <div class="flex flex-col items-start justify-between sm:flex-row">
       <div class="mb-4 sm:mb-0">
         <h2
-          class="pt-1 text-2xl font-semibold transition-colors group-hover:text-offset"
+          class="pt-1 text-2xl font-semibold transition-colors group-hover:text-secondary"
         >
           {title}
         </h2>
         {
           subTitle && (
-            <p class="pt-2 text-lg font-medium transition-colors group-hover:text-offset">
+            <p class="pt-2 text-lg font-medium transition-colors group-hover:text-secondary">
               {subTitle}
             </p>
           )

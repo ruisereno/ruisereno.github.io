@@ -8,14 +8,14 @@ import { basic, menuItems } from "../../config/config.json"
     class="container mx-auto flex max-w-6xl items-center justify-between px-4 md:px-8"
   >
     <div class="text-2xl font-bold">
-      <a href="/" class="hover:text-offset">{basic.name}</a>
+      <a href="/" class="hover:text-secondary">{basic.name}</a>
     </div>
 
     <div class="flex gap-5">
       <nav class="hidden items-center space-x-6 sm:flex">
         {
           menuItems.map((item) => (
-            <a href={item.link} class="hover:text-offset">
+            <a href={item.link} class="hover:text-secondary">
               {item.name}
             </a>
           ))
