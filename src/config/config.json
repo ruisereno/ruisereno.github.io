@@ -2,9 +2,14 @@
   "basic": {
     "name": "Rui Sereno",
     "job": "Senior Software Engineer",
-    "summary": "Senior software engineer with extensive experience delivering high-quality software solutions across various industries."
+    "summary": "Senior software engineer with extensive experience designing and delivering high-quality software solutions across various industries."
   },
   "projects": [
+    {
+      "title": "Applied Edge",
+      "link": "https://appliededge.com/",
+      "details": "While working at Applied Blockchain"
+    },
     {
       "title": "Silent Data",
       "link": "https://silentdata.com",
