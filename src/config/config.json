@@ -80,7 +80,16 @@
       "title": "Bachelor's Degree in Software Engineering",
       "subTitle": "Instituto Superior de Engenharia do Porto",
       "link": "https://isep.ipp.pt",
+      "dates": "September 2004 - September 2009",
       "details": "Porto - Portugal"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Claude Certified Architect - Foundations",
+      "subTitle": "Anthropic",
+      "link": "https://www.credly.com/badges/07f8f13f-6a37-432b-9a25-5e487ebe73f0",
+      "dates": "Issued Jul 2026 · Expires Jul 2027"
     }
   ],
   "menuItems": [
