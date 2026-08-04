@@ -1,9 +1,55 @@
-:root {
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@source "../**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}";
+
+@theme {
   --color-primary: #2563eb;
   --color-secondary: #3b82f6;
+}
+
+:root {
   --color-text: #f9fafb;
   --color-text-offset: #9ca3af;
   --color-background: #1f2937;
   --color-background-offset: #374151;
   --color-border: rgba(249, 250, 251, 0.1);
+}
+
+/* Tailwind v3 preflight rules that v4 dropped, kept so the design is unchanged. */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #e5e7eb;
+  }
+
+  button,
+  [role="button"] {
+    cursor: pointer;
+  }
+}
+
+/* `default` and `offset` resolve to different values per property, which the v3
+   config expressed via its textColor/backgroundColor/borderColor sections. v4's
+   single `--color-*` namespace can't express that, so define them as utilities. */
+@utility text-default {
+  color: var(--color-text);
+}
+@utility text-offset {
+  color: var(--color-text-offset);
+}
+@utility bg-default {
+  background-color: var(--color-background);
+}
+@utility bg-offset {
+  background-color: var(--color-background-offset);
+}
+@utility bg-border {
+  background-color: var(--color-border);
+}
+@utility border-default {
+  border-color: var(--color-border);
 }

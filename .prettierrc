@@ -1,6 +1,7 @@
 {
   "semi": false,
   "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+  "tailwindStylesheet": "./src/styles/index.css",
   "overrides": [
     {
       "files": "*.astro",

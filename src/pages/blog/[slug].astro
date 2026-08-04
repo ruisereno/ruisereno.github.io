@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content"
+import { getCollection, render } from "astro:content"
 import type { CollectionEntry } from "astro:content"
 import Layout from "../../layouts/Layout.astro"
 
@@ -8,7 +8,7 @@ export const getStaticPaths = async () => {
   const paths = blogs.map((blog) => {
     return {
       params: {
-        slug: blog.slug,
+        slug: blog.id,
       },
       props: {
         blog,
@@ -24,14 +24,14 @@ type Props = {
 }
 
 const { blog } = Astro.props
-const { Content } = await blog.render()
+const { Content } = await render(blog)
 ---
 
 <Layout title={blog.data.title} description={blog.data.description}>
   <section class="mt-12 flex justify-center">
     <div
       id="markdown"
-      class="prose prose-lg relative mb-5 overflow-visible dark:prose-invert"
+      class="relative prose prose-lg mb-5 overflow-visible dark:prose-invert"
     >
       <Content />
     </div>
